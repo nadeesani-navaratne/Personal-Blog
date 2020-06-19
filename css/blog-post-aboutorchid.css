@@ -3,7 +3,7 @@
     grid-template-rows: 1fr 3fr 1fr 1fr;
     grid-template-columns: auto;
     grid-template-areas: "hd" "main" "sd" "ft";
-    border: 5px solid lightcyan;
+    border: 2px solid grey;
 }
 
 .header {
@@ -148,10 +148,6 @@ a:link {
 
 a:visited {
     color: purple;
-}
-
-a:hover {
-    background: yellow;
 }
 
 a:active {
