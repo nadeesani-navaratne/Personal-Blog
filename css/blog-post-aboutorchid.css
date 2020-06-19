@@ -1,0 +1,169 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-areas: "hd" "main" "sd" "ft";
+    border: 5px solid lightcyan;
+}
+
+.header {
+    grid-area: hd;
+    background-image: url('../image/blog5.jpeg');
+    background-size: 100% 100%;
+    border-image-width: auto;
+}
+
+.postheader {
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 60x;
+}
+
+.firstletter {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    font-stretch: 87.5%;
+}
+
+.word {
+    font-weight: normal;
+}
+
+time {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+//Sidebar
+.sidebar {
+    background-color: hotpink;
+    border: 6px solid black;
+    display: flex;
+}
+
+#sidebar {
+    display: flex;
+}
+
+.nestedgrid {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.nestedgrid>.image {
+    flex: 2;
+}
+
+.nestedgrid>.subheader {
+    flex: 1;
+}
+
+.nestedgrid>.form {
+    flex: 2;
+}
+
+.nestedgrid>.subcontent {
+    flex: 2;
+}
+
+.nestedgrid>.subheader {
+    font-weight: bold;
+    font-family: Great Vibes;
+    text-align: center;
+    text-shadow: lavender;
+    font-size: 35px;
+    align-items: center;
+    text-justify: center;
+}
+
+.image {
+    background: border-box center url('../image/nadeesani.jpg');
+    border-radius: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 50%;
+    background-position: center;
+}
+
+.subcontent {
+    font-family: Great Vibes;
+    text-size-adjust: 80%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.form {
+    background-color: lightsteelblue;
+    justify-content: last baseline;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+label, input {
+    display: table-cell;
+    margin-bottom: 5px;
+}
+
+label {
+    margin-left: 1em;
+}
+
+.content {
+    grid-area: main;
+    display: flexbox;
+    align-content: flex-start;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.subtitle {
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+.paragraph {
+    font-weight: bold;
+}
+
+.pharase {
+    font-style: italic;
+    font-weight: bold;
+    font-family: sofia;
+    text-align: justify;
+    border-left: solid;
+}
+
+/* Links on the page*/
+
+a:link {
+    color: blue text-decoration: none
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    background: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 600px;
+        grid-template-areas: "hd hd hd hd hd hd hd hd" "sd main main main main main main main" "ft ft ft ft ft ft ft ft";
+        border: 2px solid groove;
+    }
+}

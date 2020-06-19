@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 2px;
+}
+
+/*++++++++++++++++++
+Basic css related to every blog post.
+CSS properties of the footer of the blog post
+++++++++++++++++++*/
+
+.footer-blog {
+    grid-area: ft;
+    background-color: lavender;
+    text-align: center;
+}
+
+.internellinks {
+    background-color: darkgray;
+}
+
+.footer-blog img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.footer-blog img a:hover {
+    cursor: pointer;
+    background: white;
+}
+
+.button-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: 2px solid;
+    padding: 5px;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: black;
+}
+
+/* Links on the page*/
+
+a:link {
+    color: blue text-decoration: none
+}
+
+a:visited {
+    color: purple;
+}
+
+a:active {
+    color: red;
+}
